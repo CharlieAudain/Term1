@@ -13,77 +13,12 @@ else:
                 iteration += 1
                 if iteration == 5:
                     iteration = 0
-                continue
             elif iteration == 0 and s[i] == "a":
-                continue
-            elif iteration != 0:
-                if s[i] == control[iteration-1]:
-                    continue
+                pass
+            elif iteration and s[i] == control[iteration-1]:
+                    pass
             else:
                 valid = False
-    elif s[0] == "a" and length != 1 and s[1] == "u":
-        iteration = 1
-        for i in range(0, length):
-            if s[i] == control[iteration]:
-                iteration += 1
-                if iteration == 5:
-                    iteration = 0
-                continue
-            elif iteration == 0 and s[i] == "a":
-                continue
-            elif iteration != 0:
-                if s[i] == control[iteration-1]:
-                    continue
-            else:
-                valid = False
-    elif s[0] == "a" and length != 1 and s[1] == "c":
-        iteration = 4
-        for i in range(0, length):
-            if s[i] == control[iteration]:
-                iteration += 1
-                if iteration == 5:
-                    iteration = 0
-                continue
-            elif iteration == 0 and s[i] == "a":
-                continue
-            elif iteration != 0:
-                if s[i] == control[iteration-1]:
-                    continue
-            else:
-                valid = False
-    elif s[0] == "a" and length == 1:
-        valid = True
-    elif s[0] == "u":
-        iteration = 2
-        for i in range(0, length):
-            if s[i] == control[iteration]:
-                iteration += 1
-                if iteration == 5:
-                    iteration = 0
-                continue
-            elif iteration == 0 and s[i] == "a":
-                continue
-            elif iteration != 0:
-                if s[i] == control[iteration-1]:
-                    continue
-            else:
-                valid = False
-    elif s[0] == "d":
-        iteration = 3
-        for i in range(0, length):
-            if s[i] == control[iteration]:
-                iteration += 1
-                if iteration == 5:
-                    iteration = 0
-                continue
-            elif iteration == 0 and s[i] == "a":
-                continue
-            elif iteration != 0:
-                if s[i] == control[iteration-1]:
-                    continue
-            else:
-                valid = False
-
     else:
         valid = False
 if valid == True:
