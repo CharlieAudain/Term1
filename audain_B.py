@@ -15,7 +15,7 @@ else:
                     iteration = 0
             elif iteration == 0 and s[i] == "a":
                 pass
-            elif iteration and s[i] == control[iteration-1]:
+            elif iteration != 0 and s[i] == control[iteration-1]:
                     pass
             else:
                 valid = False
